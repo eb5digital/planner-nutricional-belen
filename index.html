@@ -41,6 +41,13 @@
       --sans: 'Inter', system-ui, sans-serif;
     }
 
+    .nav-site-link { font-size:16px; text-decoration:none; opacity:.7; transition:opacity .2s; margin-right:4px; }
+    .nav-site-link:hover { opacity:1; }
+    .hdr-site-link { font-size:12px; font-weight:500; color:var(--green); text-decoration:none; padding:5px 10px; border:1px solid var(--green-light); border-radius:20px; white-space:nowrap; transition:all .2s; }
+    .hdr-site-link:hover { background:var(--green-pale); border-color:var(--green); }
+    .app-footer { text-align:center; padding:20px 16px; font-size:12px; color:var(--text-light); border-top:1px solid var(--border-light); margin-top:40px; }
+    .app-footer a { color:var(--text-light); text-decoration:none; }
+    .app-footer a:hover { color:var(--green); text-decoration:underline; }
     html { font-size: 16px; scroll-behavior: smooth; }
     body {
       font-family: var(--sans);
@@ -611,6 +618,7 @@
       <button class="hdr-nav-btn" id="nav-summary" onclick="showView('summary')">📊 Resumen</button>
     </nav>
     <div class="hdr-spacer"></div>
+    <a href="https://belentauzin.com.ar/" target="_blank" rel="noopener" class="hdr-site-link" title="Sitio web de Belén">belentauzin.com.ar</a>
     <div class="hdr-week-pill">
       <span class="hdr-week-lbl" id="week-lbl">—</span>
       <button class="week-arr" onclick="changeWeek(-1)" title="Semana anterior">‹</button>
@@ -1522,5 +1530,6 @@ document.querySelectorAll('.modal-bg').forEach(bg => {
 // ═══════════════════════════════════════════════════════════════
 document.addEventListener('DOMContentLoaded', boot);
 </script>
+  <footer class="app-footer">Creado por <a href="https://www.emibugliolo.com/" target="_blank" rel="noopener">emibugliolo.com</a></footer>
 </body>
 </html>
