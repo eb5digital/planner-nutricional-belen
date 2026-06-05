@@ -23,6 +23,11 @@
       --sans: 'Inter', system-ui, sans-serif;
     }
     html { font-size: 16px; }
+    .hdr-site-link { font-size:12px; font-weight:500; color:var(--green); text-decoration:none; padding:5px 10px; border:1px solid var(--green-light); border-radius:20px; white-space:nowrap; transition:all .2s; margin-right:4px; }
+    .hdr-site-link:hover { background:var(--green-pale); border-color:var(--green); }
+    .app-footer { text-align:center; padding:20px 16px; font-size:12px; color:var(--text-light); border-top:1px solid var(--border-light); margin-top:40px; }
+    .app-footer a { color:var(--text-light); text-decoration:none; }
+    .app-footer a:hover { color:var(--green); text-decoration:underline; }
     body { font-family: var(--sans); background: var(--cream); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
 
     /* LOADING */
@@ -185,6 +190,7 @@
       <span class="adm-logo-badge">Admin</span>
     </div>
     <div class="adm-spacer"></div>
+    <a href="https://belentauzin.com.ar/" target="_blank" rel="noopener" class="hdr-site-link">belentauzin.com.ar</a>
     <button class="adm-refresh" onclick="loadDashboard()">↺ Actualizar</button>
     <div class="adm-user">
       <div class="adm-av" id="adm-av">B</div>
@@ -588,5 +594,6 @@ async function handleSignOut() {
 
 document.addEventListener('DOMContentLoaded', bootAdmin);
 </script>
+  <footer class="app-footer">Creado por <a href="https://www.emibugliolo.com/" target="_blank" rel="noopener">emibugliolo.com</a></footer>
 </body>
 </html>
